@@ -1,1 +1,44 @@
-../../../../.git/annex/objects/Q6/VQ/MD5E-s2969--6a0f1f099580e5e189be9097cf7aef65.25/MD5E-s2969--6a0f1f099580e5e189be9097cf7aef65.25
+Traceback (most recent call last):
+  File "/opt/conda/bin/mriqc", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.8/site-packages/mriqc/cli/run.py", line 95, in main
+    mriqc_wf.run(**config.nipype.get_plugin())
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/workflows.py", line 638, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/base.py", line 164, in run
+    self._clean_queue(jobid, graph, result=result)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/base.py", line 227, in _clean_queue
+    raise RuntimeError("".join(result["traceback"]))
+RuntimeError: Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 67, in run_node
+    result["result"] = node.run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 428, in run
+    runtime = self._run_interface(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/algorithms/confounds.py", line 986, in _run_interface
+    in_nii.dataobj[:, :, :, :50].mean(axis=0).mean(axis=0).mean(axis=0)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 397, in __getitem__
+    return self._get_scaled(dtype=None, slicer=slicer)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 358, in _get_scaled
+    scaled = apply_read_scaling(self._get_unscaled(slicer=slicer), scl_slope, scl_inter)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 339, in _get_unscaled
+    return fileslice(fileobj,
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/fileslice.py", line 790, in fileslice
+    arr_data = read_segments(fileobj, segments, n_bytes, lock)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/fileslice.py", line 679, in read_segments
+    bytes = fileobj.read(length)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/openers.py", line 159, in read
+    return self.fobj.read(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/opt/conda/lib/python3.8/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/opt/conda/lib/python3.8/gzip.py", line 498, in read
+    raise EOFError("Compressed file ended before the "
+EOFError: Compressed file ended before the end-of-stream marker was reached
+
