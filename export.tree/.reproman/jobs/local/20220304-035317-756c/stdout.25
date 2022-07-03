@@ -1,0 +1,214 @@
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run --cleanenv code/containers/images/bids/bids-mriqc--21.0.0rc2.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003612-mriqc participant --participant-label '108TUSW011026' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds003612_sub-108TUSW011026' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds003612 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003612-mriqc
+220306-04:45:35,453 cli IMPORTANT:
+	 
+    Running MRIQC version 21.0.0rc2:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003612-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003612-mriqc.
+      * Analysis levels: ['participant'].
+
+220306-04:45:36,74 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:45:47,891 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:13,798 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220306-04:46:13,828 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+220306-04:46:13,891 nipype.workflow INFO:
+	 Running in parallel.
+220306-04:46:13,907 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 8 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220306-04:46:14,74 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003612_sub-108TUSW011026/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003612-mriqc..sourcedata..raw..sub-108TUSW011026..ses-1..func..sub-108TUSW011026_ses-1_task-execution_acq-Fs2_run-02_bold.nii.gz/metadata".
+220306-04:46:14,160 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-04:46:16,671 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:16,676 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:17,430 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:17,866 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:19,464 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:19,485 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:19,580 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:19,765 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-04:46:19,765 nipype.workflow INFO:
+	 [Job 3] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-04:46:19,863 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003612_sub-108TUSW011026/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003612-mriqc..sourcedata..raw..sub-108TUSW011026..ses-1..func..sub-108TUSW011026_ses-1_task-execution_acq-Fs2_run-02_bold.nii.gz/provenance".
+220306-04:46:19,870 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-04:46:19,971 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-04:46:19,972 nipype.workflow INFO:
+	 [Job 4] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-04:46:20,64 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003612_sub-108TUSW011026/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003612-mriqc..sourcedata..raw..sub-108TUSW011026..ses-1..func..sub-108TUSW011026_ses-1_task-imagery_acq-Fs2_run-01_bold.nii.gz/metadata".
+220306-04:46:20,73 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-04:46:20,787 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:21,168 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:21,304 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:22,900 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:23,29 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:23,48 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:23,49 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:23,577 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:25,980 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-04:46:25,980 nipype.workflow INFO:
+	 [Job 6] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-04:46:26,82 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003612_sub-108TUSW011026/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003612-mriqc..sourcedata..raw..sub-108TUSW011026..ses-1..func..sub-108TUSW011026_ses-1_task-imagery_acq-Fs2_run-01_bold.nii.gz/provenance".
+220306-04:46:26,99 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-04:46:27,204 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-04:46:27,204 nipype.workflow INFO:
+	 [Job 7] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-04:46:27,301 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 0 jobs ready. Free memory (GB): 29.20/30.00, Free processors: 52/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.non_steady_state_detector
+                       * mriqc_wf.funcMRIQC.non_steady_state_detector
+                       * mriqc_wf.anatMRIQC.conform
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.metadata
+220306-04:46:27,312 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:27,401 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:27,685 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:27,691 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:29,108 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:29,385 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:29,497 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:29,661 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:30,46 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:30,240 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:30,905 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:34,346 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-04:46:34,355 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.funcMRIQC.non_steady_state_detector" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003612_sub-108TUSW011026/mriqc_wf/funcMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003612-mriqc..sourcedata..raw..sub-108TUSW011026..ses-1..func..sub-108TUSW011026_ses-1_task-execution_acq-Fs2_run-02_bold.nii.gz/non_steady_state_detector)
+220306-04:46:35,313 nipype.workflow ERROR:
+	 Node non_steady_state_detector.a0 failed to run on host c144-004.frontera.tacc.utexas.edu.
+220306-04:46:35,314 nipype.workflow ERROR:
+	 Saving crash info to /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003612-mriqc/logs/crash-20220306-044635-jbwexler-non_steady_state_detector.a0-0e45d7a7-693d-4b96-b2b3-3a4bfed83c5b.txt
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 67, in run_node
+    result["result"] = node.run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 428, in run
+    runtime = self._run_interface(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/algorithms/confounds.py", line 986, in _run_interface
+    in_nii.dataobj[:, :, :, :50].mean(axis=0).mean(axis=0).mean(axis=0)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 397, in __getitem__
+    return self._get_scaled(dtype=None, slicer=slicer)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 358, in _get_scaled
+    scaled = apply_read_scaling(self._get_unscaled(slicer=slicer), scl_slope, scl_inter)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 339, in _get_unscaled
+    return fileslice(fileobj,
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/fileslice.py", line 790, in fileslice
+    arr_data = read_segments(fileobj, segments, n_bytes, lock)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/fileslice.py", line 679, in read_segments
+    bytes = fileobj.read(length)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/openers.py", line 159, in read
+    return self.fobj.read(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/gzip.py", line 292, in read
+    return self._buffer.read(size)
+  File "/opt/conda/lib/python3.8/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+  File "/opt/conda/lib/python3.8/gzip.py", line 498, in read
+    raise EOFError("Compressed file ended before the "
+EOFError: Compressed file ended before the end-of-stream marker was reached
+
+220306-04:46:36,112 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,186 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,198 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,219 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,324 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,364 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,395 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,442 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,449 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:38,891 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:39,91 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:39,326 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:39,369 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:39,442 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:39,478 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:39,614 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:40,95 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:40,486 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:40,610 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:40,807 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:40,862 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:41,540 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:42,797 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:42,820 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:42,865 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:44,284 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:44,336 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:44,350 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:44,524 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:46:45,182 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
